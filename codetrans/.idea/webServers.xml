@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4a3b6afc-4620-492d-80f5-5dbbb7add63a" name="3090-2">
+        <fileTransfer rootFolder="/home/syqi/CodeTransformation-clear" accessType="SFTP" host="10.249.46.59" port="22" sshConfigId="d48f1976-ae07-49e4-824b-5429128252a7" sshConfig="syqi@10.249.46.59:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

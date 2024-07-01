@@ -1,0 +1,1 @@
+{"0": "\ndef sina_xml_to_url_list ( var_0 ) : \n    var_1 = [ ] \n    var_2 = parseString ( var_0 ) \n    for node in var_2 . getElementsByTagName ( 'durl' ) : \n        var_3 = node . getElementsByTagName ( 'url' ) [ 0 ] \n        var_1 . append ( var_3 . var_4 [ 0 ] . var_5 ) \n    return var_1 "}

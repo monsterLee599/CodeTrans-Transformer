@@ -1,0 +1,1 @@
+{"0": "def sina_xml_to_url_list ( xml_data ) : \n    rawurl = [ ] \n    dom = parseString ( xml_data ) \n    for node in dom . getElementsByTagName ( 'durl' ) : \n        url = node . getElementsByTagName ( 'url' ) [ 0 ] \n        rawurl . append ( url . childNodes [ 0 ] . data ) \n    return rawurl"}
