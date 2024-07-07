@@ -1,5 +1,3 @@
-Here's the enhanced README in Markdown format:
-
 # Code Summarization Task
 
 ## Dependencies
