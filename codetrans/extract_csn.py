@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import argparse
+import ast
 
 sys.path.append('./scripts')
 
@@ -10,6 +11,38 @@ from AstToTree import *
 from python.DelCommentTransformation import *
 from java.DelCommentTransformation import *
 from GetParseTree import *
+
+
+class PrintCalculatorVisitor(ast.NodeVisitor):
+    def __init__(self):
+        self.contains_calculation = False
+
+    def visit_Call(self, node):
+        if isinstance(node.func, ast.Name) and node.func.id == 'print':
+            for arg in node.args:
+                if self.is_calculating(arg):
+                    self.contains_calculation = True
+        self.generic_visit(node)
+
+    def is_calculating(self, node):
+
+        if isinstance(node, (ast.BinOp, ast.UnaryOp, ast.Call)):
+            return True
+        if isinstance(node, ast.BoolOp):
+            return any(self.is_calculating(value) for value in node.values)
+        if isinstance(node, ast.Compare):
+            return any(self.is_calculating(comp) for comp in node.comparators)
+        return False
+
+def contains_print_calculation(code):
+    try:
+        tree = ast.parse(code)
+        visitor = PrintCalculatorVisitor()
+        visitor.visit(tree)
+        return visitor.contains_calculation
+    except SyntaxError:
+        return False
+
 
 
 
