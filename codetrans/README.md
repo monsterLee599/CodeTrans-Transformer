@@ -5,6 +5,10 @@
 This repository contains scripts for downloading, processing, and transforming CodeSearchNet datasets for Java and Python. The datasets are downloaded into respective folders, e.g., the test file path for Python is `./dataset/CodeSearchNet/python/test.jsonl`.
 
 
+## Examples of Code Transformation
+
+<img width="656" alt="image" src="https://github.com/user-attachments/assets/c8cf1f88-0918-4915-b623-79a1072259bb" />
+
 
 ## Data Download and Processing
 
