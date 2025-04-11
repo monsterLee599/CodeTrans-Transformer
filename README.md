@@ -1,9 +1,17 @@
 # Code-Transformation-Transformer
 
-The official implementation of:
-* __A Closer Look into Transformer-Based Code Intelligence Through Code Transformation: Challenges and Opportunities__ [[arxiv](https://arxiv.org/abs/2207.04285)] 
+The official implementation for the paper:
+* __Understanding the Robustness of Transformer-Based Code Intelligence via Code Transformation: Challenges and Opportunities__
 
-The repository use [CodeSearchNet Dataset](https://github.com/github/CodeSearchNet) with Java and Python languages.
+This paper has been accepted by **IEEE Transactions on Software Engineering (TSE)**.
+
+*   **Published Version (Recommended):** [[IEEE Xplore](https://ieeexplore.ieee.org/document/10843180/)]
+*   *Initial Preprint (Archival):* [[arXiv](https://arxiv.org/abs/2207.04285)]
+
+**Please note:** The version published in TSE is the definitive and significantly improved version. It incorporates substantial enhancements, deeper analysis, and more detailed discussions resulting from the peer review process (major and minor revisions) compared to the initial arXiv preprint, which had limitations and shallower discussions.
+
+
+The repository uses [CodeSearchNet Dataset](https://github.com/github/CodeSearchNet) with Java and Python languages.
 
 ## Repository structure
 * `codetrans`: code transformation strategies in our paper.
@@ -38,11 +46,12 @@ Parts of this code are based on the following repositories:
 
 If you found this code useful, please cite our paper
 ```
-@article{li2022closer,
-  title={A closer look into transformer-based code intelligence through code transformation: Challenges and opportunities},
-  author={Li, Yaoxian and Qi, Shiyi and Gao, Cuiyun and Peng, Yun and Lo, David and Xu, Zenglin and Lyu, Michael R},
-  journal={arXiv preprint arXiv:2207.04285},
-  year={2022}
+@article{li2025understanding,
+  title={Understanding the Robustness of Transformer-Based Code Intelligence via Code Transformation: Challenges and Opportunities},
+  author={Li, Yaoxian and Qi, Shiyi and Gao, Cuiyun and Peng, Yun and Lo, David and Lyu, Michael R and Xu, Zenglin},
+  journal={IEEE Transactions on Software Engineering},
+  year={2025},
+  publisher={IEEE}
 }
 ```
 
